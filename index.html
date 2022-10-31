@@ -1,0 +1,34 @@
+<html>
+    <head>
+    <title>GESTURE WEB APP</title>
+    <link rel="shortcut icon" href="LOGO.png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    
+    <section class="plate effect">
+
+        <div id="camera"></div>
+        <button class="button effect" onclick="take_snapshot()">Capture Image</button>
+
+        <h3 id="prediction"></h3>
+
+        <div id="result" class="effect"></div>
+        <button class="button2 effect" onclick="check()">Check Image</button>
+
+    </section>
+    <script src="main.js"></script>
+  </body>
+  </html>
